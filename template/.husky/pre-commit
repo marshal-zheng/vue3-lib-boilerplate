@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Run TypeScript type check
+npx tsc --noEmit
+
+# Run lint-staged
+npm exec lint-staged

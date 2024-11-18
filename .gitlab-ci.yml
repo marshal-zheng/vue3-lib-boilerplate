@@ -1,0 +1,10 @@
+stages: 
+- release
+release:
+  tags:
+    - fe-buildbox
+  script:
+    - git release-npm -r patch -t latest -f
+  stage: release
+  only:
+    - tags

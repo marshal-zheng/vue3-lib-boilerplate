@@ -1,0 +1,53 @@
+{
+  "name": "@marsio/vue3-lib-boilerplate",
+  "version": "1.0.0",
+  "description": "A scaffold for creating Vue 3 components",
+  "main": "bin/create-vue-lib.js",
+  "bin": {
+    "vgen": "./bin/create-vue-lib.js"
+  },
+  "scripts": {
+    "release": "node script.js release"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "scaffold",
+    "component"
+  ],
+  "author": "Marshall",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "fs-extra": "^11.2.0",
+    "git-cliff": "^2.4.0",
+    "inquirer": "~8.2.6",
+    "minimist": "^1.2.5",
+    "semver": "^7.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git@github.com:marshal-zheng/vue3-lib-boilerplate.git"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7"
+  },
+  "husky": {
+    "hooks": {}
+  },
+  "lint-staged": {
+    "lib/**/*.{js,vue,ts,tsx}": "eslint --fix"
+  },
+  "files": [
+    "bin/",
+    "template/",
+    "package.json",
+    "README.md",
+    "script.js",
+    "cliff.toml",
+    "commitlint.config.js"
+  ]
+}

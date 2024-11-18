@@ -1,0 +1,14 @@
+.idea
+*.iml
+*.tgz
+node_modules/
+
+# OS
+.DS_Store
+.idea
+.editorconfig
+.npmrc
+package-lock.json
+
+pnpm-lock.yaml
+yarn.lock
